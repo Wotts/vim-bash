@@ -1,8 +1,17 @@
 " Vimrc Twan Driessen - Systeemprogrammeur XS4ALL Internet
 
-colorscheme srcery
+"Colour
 syntax on
+colorscheme srcery
 hi MatchParen cterm=bold
+
+
+"Whitespace
+highlight ExtraWhitespace ctermbg=darkgrey
+match ExtraWhitespace /\s\s\+$/
+
+
+"Behaviour
 filetype plugin indent on
 set ls=2
 set title
@@ -19,15 +28,22 @@ set smartcase
 set scroll=20
 set cursorline
 set splitright
+set showcmd
+
+
+"Filetypes
 autocmd BufNewFile,BufRead *.tt2 set filetype=html
 autocmd BufNewFile,BufRead *.t set filetype=perl
 autocmd BufNewFile,BufRead *.ns set filetype=perl
-vmap T !perltidy<CR>
-vmap S !sort<CR>
-nnoremap <silent> <BS> :nohlsearch<CR>
-highlight ExtraWhitespace ctermbg=darkgrey
-match ExtraWhitespace /\s\s\+$/
 
+
+"Keybindings
 "Remove all trailing whitespace by pressing F6
 nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-set pastetoggle=<F11>
+nnoremap <silent> <BS> :nohlsearch<CR>
+vmap S !sort<CR>
+vmap T !perltidy<CR>
+set pastetoggle=<F8>
+"Ctrl-N for word, Ctrl-L for line-completion
+inoremap <C-N> <C-X><C-N>
+inoremap <C-L> <C-X><C-L>

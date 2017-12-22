@@ -12,7 +12,7 @@ export LANGUAGE=en_GB.UTF-8
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-export LESS="-S "
+export LESS="SR"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
