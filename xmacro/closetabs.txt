@@ -95,3 +95,9 @@ Delay 1
 KeyStrPress d
 KeyStrRelease d
 KeyStrRelease Control_L
+
+Delay 1
+KeyStrPress Control_L
+KeyStrPress d
+KeyStrRelease d
+KeyStrRelease Control_L
