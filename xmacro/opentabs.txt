@@ -1,0 +1,87 @@
+KeyStrPress Control_L
+KeyStrPress Shift_L
+KeyStrPress t
+KeyStrRelease t
+KeyStrRelease Shift_L
+KeyStrRelease Control_L
+
+String jessie
+KeyStr Return
+
+String screen -r wotts1
+KeyStr Return
+
+
+
+KeyStrPress Control_L
+KeyStrPress Shift_L
+KeyStrPress t
+KeyStrRelease t
+KeyStrRelease Shift_L
+KeyStrRelease Control_L
+
+String jessie
+KeyStr Return
+
+String screen -r wotts2
+KeyStr Return
+
+
+
+KeyStrPress Control_L
+KeyStrPress Shift_L
+KeyStrPress t
+KeyStrRelease t
+KeyStrRelease Shift_L
+KeyStrRelease Control_L
+
+String jessie
+KeyStr Return
+
+String screen -r wotts3
+KeyStr Return
+
+
+
+KeyStrPress Control_L
+KeyStrPress Shift_L
+KeyStrPress t
+KeyStrRelease t
+KeyStrRelease Shift_L
+KeyStrRelease Control_L
+
+String jessie
+KeyStr Return
+
+String screen -r wotts4
+KeyStr Return
+
+
+
+KeyStrPress Control_L
+KeyStrPress Shift_L
+KeyStrPress t
+KeyStrRelease t
+KeyStrRelease Shift_L
+KeyStrRelease Control_L
+
+String jessie
+KeyStr Return
+
+String screen -r wotts-rpc
+KeyStr Return
+
+
+
+KeyStrPress Control_L
+KeyStrPress Shift_L
+KeyStrPress t
+KeyStrRelease t
+KeyStrRelease Shift_L
+KeyStrRelease Control_L
+
+String jessie
+KeyStr Return
+
+String vim notes
+KeyStr Return

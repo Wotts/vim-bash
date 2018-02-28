@@ -1,0 +1,91 @@
+KeyStrPress Control_L
+KeyStrPress Next
+KeyStrRelease Next
+KeyStrRelease Control_L
+
+
+
+KeyStrPress Control_L
+KeyStrPress a
+KeyStrRelease Control_L
+KeyStrRelease a
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress Control_L
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress d
+KeyStrRelease d
+KeyStrRelease Control_L
+
+
+
+KeyStrPress Control_L
+KeyStrPress a
+KeyStrRelease Control_L
+KeyStrRelease a
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress Control_L
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress d
+KeyStrRelease d
+KeyStrRelease Control_L
+
+
+
+KeyStrPress Control_L
+KeyStrPress a
+KeyStrRelease Control_L
+KeyStrRelease a
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress Control_L
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress d
+KeyStrRelease d
+KeyStrRelease Control_L
+
+
+
+KeyStrPress Control_L
+KeyStrPress a
+KeyStrRelease Control_L
+KeyStrRelease a
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress Control_L
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress d
+KeyStrRelease d
+KeyStrRelease Control_L
+
+
+
+KeyStrPress Control_L
+KeyStrPress a
+KeyStrRelease Control_L
+KeyStrRelease a
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress Control_L
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress d
+KeyStrRelease d
+KeyStrRelease Control_L
+
+
+
+String :wq
+KeyStrPress Return
+KeyStrRelease Return
+KeyStrPress Control_L
+KeyStrPress d
+KeyStrRelease d
+KeyStrPress d
+KeyStrRelease d
+KeyStrRelease Control_L

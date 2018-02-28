@@ -12,7 +12,7 @@ export LANGUAGE=en_GB.UTF-8
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-export LESS="SR"
+export LESS="-SR"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -53,3 +53,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+
+alias opentabs="xmacroplay "$DISPLAY" < xmacro/opentabs.txt"
+alias closetabs="xmacroplay "$DISPLAY" < xmacro/closetabs.txt"
