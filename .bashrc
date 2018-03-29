@@ -47,6 +47,7 @@ LS_COLORS=$LS_COLORS:'di=0;34:fi=0;0:ln=0;94:ex=0;32' ; export LS_COLORS
 
 
 # Aliases
+alias ww="~/bin/screen-wotts"
 alias perldork='perldoc'
 
 alias ls='ls --color=auto'
