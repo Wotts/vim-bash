@@ -5,4 +5,4 @@ border_color=#2D2B28
 text_color=#FCE8C3
 htext_color=#F75341
 
-rofi -show run -lines 5 -eh 1 -width 20 -bw 2 -no-show-match -color-window "$bg_color, $border_color, $bg_color" -color-normal "$bg_color, $text_color, $bg_color, $bg_color, $htext_color" -font "System San Francisco Display 11"
+rofi -show run -lines 5 -eh 1 -width 20 -bw 2 -no-show-match -hide-scrollbar -color-window "$bg_color, $border_color, $bg_color" -color-normal "$bg_color, $text_color, $bg_color, $bg_color, $htext_color" -font "System San Francisco Display 11"

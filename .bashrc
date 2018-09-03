@@ -55,7 +55,3 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-
-alias opentabs="xmacroplay "$DISPLAY" < xmacro/opentabs.txt"
-alias closetabs="xmacroplay "$DISPLAY" < xmacro/closetabs.txt"
