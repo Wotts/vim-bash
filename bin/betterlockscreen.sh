@@ -51,10 +51,10 @@ prelock() {
 
 lock() {
 	#$1 image path
-	letterEnteredColor=d23c3dff
-	letterRemovedColor=d23c3dff
-	passwordCorrect=00000000
-	passwordIncorrect=d23c3dff
+	letterEnteredColor=0aaeb3ff
+	letterRemovedColor=f75341ff
+	passwordCorrect=0aaeb3ff
+	passwordIncorrect=f75341ff
 	background=00000000
 	foreground=ffffffff
 	i3lock \
