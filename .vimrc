@@ -31,6 +31,13 @@ set splitright
 set showcmd
 
 
+"Hide POD
+:set foldmethod=syntax
+:let perl_fold=1
+:let perl_nofold_packages=1
+:let perl_nofold_subs=1
+
+
 "Filetypes
 autocmd BufNewFile,BufRead *.tt2 set filetype=html
 autocmd BufNewFile,BufRead *.t set filetype=perl
