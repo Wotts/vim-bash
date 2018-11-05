@@ -54,3 +54,6 @@ set pastetoggle=<F8>
 "Ctrl-N for word, Ctrl-L for line-completion
 inoremap <C-N> <C-X><C-N>
 inoremap <C-L> <C-X><C-L>
+
+"Pathogen for vim-airline and vim-gitgutter
+execute pathogen#infect()
