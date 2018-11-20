@@ -25,7 +25,8 @@ set number
 set relativenumber
 set ignorecase
 set smartcase
-set scroll=20
+noremap <C-d> 10<C-d>
+noremap <C-u> 10<C-u>
 set cursorline
 set splitright
 set showcmd
