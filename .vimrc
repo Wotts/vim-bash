@@ -31,7 +31,7 @@ set cursorline
 set splitright
 set showcmd
 set wildmenu
-set wildmode=list:full
+set wildmode=full
 set noshowmode "Airline does this for us
 
 
@@ -55,6 +55,8 @@ nnoremap <silent> <BS> :nohlsearch<CR>
 vmap S !sort<CR>
 vmap T !perltidy<CR>
 set pastetoggle=<F8>
+"Open and close NERDTree
+map <C-x> :NERDTreeToggle<CR>
 "Ctrl-N for word, Ctrl-L for line-completion
 inoremap <C-N> <C-X><C-N>
 inoremap <C-L> <C-X><C-L>
@@ -71,3 +73,9 @@ endif
 
 let g:airline_symbols.branch = '⎇ '
 :let g:airline_theme='airlinewotts'
+
+"NERDTree customizations
+let NERDTreeWinSize=36
+let NERDTreeShowHidden=1
+let NERDTreeMapOpenInTab='<ENTER>'
+let NERDTreeNodeDelimiter = "\t"
