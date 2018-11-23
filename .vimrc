@@ -3,7 +3,7 @@
 "Colour
 syntax on
 colorscheme srcery
-hi MatchParen cterm=bold
+hi MatchParen cterm=bold ctermfg=black ctermbg=white
 
 
 "Whitespace
