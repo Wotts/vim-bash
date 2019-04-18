@@ -31,21 +31,33 @@ esac
 LS_COLORS=$LS_COLORS:'di=0;34:fi=0;0:ln=0;94:ex=0;32' ; export LS_COLORS
 
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ ( ⎇  \1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( ⎇  \1 )/'
 }
 
-green="\[\e[32m\]"
+sep1="▓▒░ "
+sep2=" ░▒▓"
+green="\[\e[1;32m\]"
 red="\[\e[31m\]"
 yellow="\[\e[33m\]"
-blue="\[\e[34m\]"
+cyan="\[\e[34m\]"
+whiteback="\[\e[1;30;107m\]"
+whitetocyan="\[\e[39m\e[46m\]"
+cyanback="\[\e[1;30;46m\]"
 reset="\[\e[m\]"
+
 if [ $STY ]; then
-    screen="{$STY}"
+    screen="${red}( #$STY )"
 else
     screen=""
 fi
 
-export PS1="${debian_chroot:+($debian_chroot)}${green}\u${reset}@${blue}\h ${red}${screen}${yellow}\$(parse_git_branch)${reset} \w\n${red}</>${reset} "
+userpart="╭─${debian_chroot:+($debian_chroot)}${whiteback}${sep1} \u "
+hostpart="${whitetocyan}${sep1}${cyanback} \h ${sep2}${reset}"
+git="${yellow}\$(parse_git_branch)${reset}"
+path="${green}\w${reset}"
+prompt="╰──╼ ${red}</>${reset} "
+
+export PS1="${userpart} ${hostpart} ${screen} ${git} ${path}\n${prompt}"
 
 
 
