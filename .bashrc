@@ -75,6 +75,7 @@ esac
 # Aliases
 alias ww="~/bin/screen-wotts"
 alias perldork='perldoc'
+alias please='sudo $(fc -ln -1)'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
