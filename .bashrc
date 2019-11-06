@@ -15,7 +15,7 @@ export VISUAL=vim
 export RANGER_LOAD_DEFAULT_RC=false
 export EDITOR="$VISUAL"
 
-export LESS="-SR"
+export LESS="-SR -# 10"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
