@@ -34,6 +34,14 @@ set wildmenu
 set wildmode=longest:full
 set noshowmode "Airline does this for us
 
+"Auto-closing
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 "Hide POD
 :set foldmethod=syntax
