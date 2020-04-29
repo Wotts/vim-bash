@@ -98,7 +98,7 @@ set $text-color-white    #FCE8C3
 set $text-color-blue     #5573A3
 set $inactive-text-color #918175
 set $urgent-bg-color     #2D2B28
-set $urgent-text-color   #F75341
+set $urgent-text-color   #5573A3
 
 # window colors
 #                       border              background         text                 indicator
