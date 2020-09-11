@@ -77,6 +77,8 @@ esac
 alias ww="~/bin/screen-wotts"
 alias perldork='perldoc'
 alias please='sudo $(fc -ln -1)'
+alias maak='make'
+alias yeet='rm -rf'
 alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 
 alias ls='ls --color=auto'
