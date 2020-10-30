@@ -79,6 +79,7 @@ alias perldork='perldoc'
 alias please='sudo $(fc -ln -1)'
 alias maak='make'
 alias yeet='rm -rf'
+alias vimall='vim -p $(git status --porcelain | awk '\''{print $2}'\'')'
 alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 
 alias ls='ls --color=auto'

@@ -83,7 +83,7 @@ bindsym $mod+a focus parent
 
 
 
-# Colour Palette
+# Colour Palette srcery
 # Black     #1C1B19 #2D2B28
 # Red       #FF3128 #F75341
 # Green     #519F50 #98BC37
@@ -134,7 +134,7 @@ set $workspace4 "4:   "
 set $workspace5 "5:   "
 set $workspace6 "6:   "
 set $workspace7 "7:   "
-set $workspace8 "8:   "
+set $workspace8 "8:   "
 set $workspace9 "9:   "
 set $workspace10 "10:   "
 
@@ -166,14 +166,17 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 #assign [class="Gnome-terminal"] $workspace1
 assign [class="Firefox"] $workspace2
 assign [class="Mattermost"] $workspace3
+assign [class="Slack"] $workspace3
 assign [class="Thunderbird"] $workspace4
 assign [class="Nautilus"] $workspace5
 assign [class="Eog"] $workspace6
+assign [class="feh"] $workspace6
 assign [class="Steam"] $workspace7
 assign [class="libreoffice"] $workspace8
 #assign [class=""] $workspace8
 assign [class="Google-chrome"] $workspace9
 assign [class="vlc"] $workspace10
+assign [class="discord"] $workspace8
 for_window [class="Spotify"] move to workspace $workspace10
 
 
@@ -182,7 +185,7 @@ for_window [class="Spotify"] move to workspace $workspace10
 
 # staring applications
 bindsym $mod+Return workspace $workspace1 exec --no-startup-id i3-sensible-terminal --password-store=gnome
-bindsym $mod+i workspace $workspace8 exec --no-startup-id gnome-terminal --profile=Wotts-srcery-transparent -e ranger
+bindsym $mod+i workspace $workspace5 exec --no-startup-id gnome-terminal --profile=Wotts-srcery-transparent -e ranger
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+c exec --no-startup-id google-chrome --password-store=gnome
 
@@ -228,9 +231,10 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
 
 # Switch monitors
-exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output HDMI-1 --auto; restart"
-bindsym $mod+g exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output HDMI-1 --auto; restart"
-bindsym $mod+Shift+g exec --no-startup-id "xrandr --output eDP-1 --auto; xrandr --output HDMI-1 --off; restart"
+exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output DP-1 --auto; restart"
+bindsym $mod+g exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output DP-1 --auto; restart"
+bindsym $mod+k exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output HDMI-1 --auto; restart"
+bindsym $mod+Shift+g exec --no-startup-id "xrandr --output eDP-1 --auto; xrandr --output DP-1 --off; xrandr --output HDMI-1 --off; restart"
 bindsym $mod+Shift+h exec --no-startup-id "xrandr -s 1920x1080"
 
 # Media volume controls
@@ -268,4 +272,4 @@ for_window [class="^.*"] border pixel 5
 
 # Wallpapers
 exec_always --no-startup-id feh --bg-fill ~/Pictures/fVNa6RR.jpg
-exec ~/bin/betterlockscreen.sh -u ~/Pictures/fVNa6RR.jpg
+#exec ~/bin/betterlockscreen.sh -u ~/Pictures/fVNa6RR.jpg
