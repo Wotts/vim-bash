@@ -1,6 +1,4 @@
 # Bashrc Twan Driessen - Systeemprogrammeur XS4ALL Internet
-alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
-
 shopt -s cdspell
 shopt -s histappend
 shopt -s checkwinsize
