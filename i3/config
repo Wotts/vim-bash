@@ -110,11 +110,12 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-colo
 
 # Start i3bar to display a workspace bar with i3blocks
 bar {
+        separator_symbol ""
         position top
   	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	colors {
 		background $inactive-bg-color
-	    	separator  $inactive-bg-color
+	    	separator  $inactive-text-color
 		#                  border             background         text
 		focused_workspace  $inactive-bg-color $inactive-bg-color $text-color-white
 		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
@@ -130,7 +131,7 @@ bar {
 set $workspace1 "1:   "
 set $workspace2 "2:   "
 set $workspace3 "3:   "
-set $workspace4 "4:   "
+set $workspace4 "4:   "
 set $workspace5 "5:   "
 set $workspace6 "6:   "
 set $workspace7 "7:   "
@@ -168,9 +169,11 @@ assign [class="Firefox"] $workspace2
 assign [class="Mattermost"] $workspace3
 assign [class="Slack"] $workspace3
 assign [class="Thunderbird"] $workspace4
+assign [class="Postman"] $workspace4
 assign [class="Nautilus"] $workspace5
 assign [class="Eog"] $workspace6
 assign [class="feh"] $workspace6
+assign [class="Gimp"] $workspace6
 assign [class="Steam"] $workspace7
 assign [class="libreoffice"] $workspace8
 #assign [class=""] $workspace8
