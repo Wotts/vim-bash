@@ -4,3 +4,5 @@
   path = .gitconfig-professional-xs
 [includeIf "gitdir:~/yello/"]
   path = .gitconfig-professional-xs
+[includeIf "gitdir:~/omni-next/"]
+  path = .gitconfig-professional-kpn
