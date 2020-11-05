@@ -150,12 +150,12 @@
 .view-player .player-controls-container .controls .button-play:after {
 	box-shadow: unset !important;
 }
-
+/*
 .view-player .player-controls-container {
 	position: absolute !important;
 	width: 100% !important;
 }
-
+*/
 .view-player .player-controls-container .controls {
 	width: 100% !important;
 	height: 100%  !important;
@@ -165,11 +165,11 @@
 
 /*
 Hide the song duration and elapsed text. I dont know where to put those so I just hide them
-*/
 .view-player .player-controls-container .progress-container .elapsed,
 .view-player .player-controls-container .progress-container .remaining {
 	display: none !important;
 }
+*/
 
 /* Add round corner for Gerne and Mood cards */
 .gc-image-container,
@@ -568,7 +568,7 @@ span.glue-page-header__title-text {
 .view-player .now-playing-container .button-add {
 	color: var(--modspotify_main_fg) !important;
 }
-
+/*
 .progress-container .progress-bar,
 .progress-container .inner {
 	top: 0 !important;
@@ -593,6 +593,7 @@ span.glue-page-header__title-text {
 	background-color: var(--modspotify_main_fg) !important;
 	box-shadow: 0 1px 1px 0 var(--modspotify_main_fg);
 }
+*/
 
 .saber-hilt {
 	display: none;
