@@ -110,17 +110,17 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-colo
 
 # Start i3bar to display a workspace bar with i3blocks
 bar {
-        separator_symbol ""
-        position top
-  	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	colors {
-		background $inactive-bg-color
-	    	separator  $inactive-text-color
-		#                  border             background         text
-		focused_workspace  $inactive-bg-color $inactive-bg-color $text-color-white
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $inactive-bg-color $inactive-bg-color $urgent-text-color
-	}
+    separator_symbol ""
+    position top
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    colors {
+        background $inactive-bg-color
+        separator  $bg-color
+        #                  border             background         text
+        focused_workspace  $inactive-bg-color $inactive-bg-color $text-color-white
+        inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+        urgent_workspace   $inactive-bg-color $inactive-bg-color $urgent-text-color
+    }
 }
 
 
@@ -128,16 +128,16 @@ bar {
 
 
 # Workspaces
-set $workspace1 "1:   "
-set $workspace2 "2:   "
-set $workspace3 "3:   "
-set $workspace4 "4:   "
-set $workspace5 "5:   "
-set $workspace6 "6:   "
-set $workspace7 "7:   "
-set $workspace8 "8:   "
-set $workspace9 "9:   "
-set $workspace10 "10:   "
+set $workspace1 "1:  "
+set $workspace2 "2:  "
+set $workspace3 "3:  "
+set $workspace4 "4:  "
+set $workspace5 "5:  "
+set $workspace6 "6:  "
+set $workspace7 "7:  "
+set $workspace8 "8:  "
+set $workspace9 "9:  "
+set $workspace10 "10:  "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
