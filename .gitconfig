@@ -1,3 +1,6 @@
+[core]
+  excludesfile = ~/.gitignore
+
 [includeIf "gitdir:~/personal_code/"]
   path = .gitconfig-personal
 [includeIf "gitdir:~/janus-gateway/"]
