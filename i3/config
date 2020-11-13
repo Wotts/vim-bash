@@ -4,6 +4,7 @@
 # - i3-gaps
 # - i3blocks
 # - compton
+# - dunst
 # - lxappearance
 # - Consolas font
 # - fontawesome
@@ -22,6 +23,7 @@
 # - neofetch
 # - htop
 # - gotop
+# - bashtop
 # - cmatrix
 
 
@@ -79,6 +81,8 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# Mute Slack
+bindsym --release $mod+m workspace $workspace6 exec --no-startup-id xdotool key m
 
 
 

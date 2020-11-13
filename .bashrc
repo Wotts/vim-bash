@@ -75,6 +75,7 @@ esac
 alias ww="~/bin/screen-wotts"
 alias perldork='perldoc'
 alias please='sudo $(fc -ln -1)'
+alias open='xdg-open'
 alias maak='make'
 alias yeet='rm -rf'
 alias vimall='vim -p $(git status --porcelain | awk '\''{print $2}'\'')'
