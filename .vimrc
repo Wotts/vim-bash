@@ -59,7 +59,9 @@ autocmd BufNewFile,BufRead *.ns set filetype=perl
 "Keybindings
 "Remove all trailing whitespace by pressing F6
 nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+nnoremap <F7> :%!python3 -m json.tool<CR>
 nnoremap <silent> <BS> :nohlsearch<CR>
+vmap J !jq<CR>
 vmap S !sort<CR>
 vmap T !perltidy<CR>
 set pastetoggle=<F8>
