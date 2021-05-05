@@ -101,3 +101,9 @@ alias egrep='egrep --color=auto'
 # exa aliases
 alias exals='exa --long --all --all --header --modified --git --classify --sort=name'
 alias exatree='exa --long --all --header --modified --git --classify --tree --sort=name'
+
+docker-remove-all() {
+  docker system prune --volumes --force
+  docker rm $(docker ps -a -q)
+  docker rmi -f $(docker images -qa)
+}
